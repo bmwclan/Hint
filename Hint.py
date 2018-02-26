@@ -15,7 +15,7 @@ async def background_loop():
     messages = deepcopy(messages_list)
     cleanmessages = deepcopy(messages_list)
     while not client.is_closed:
-        channel = client.get_channel("242956769503084544")
+        channel = client.get_channel("417648831694635008")
         if not messages:
             messages = deepcopy(cleanmessages)
         await client.send_message(channel, messages.pop(random.randrange(0, len(messages))))
