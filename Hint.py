@@ -12,13 +12,16 @@ client = discord.Client()
 async def background_loop():
     await client.wait_until_ready()
     await client.change_presence(game=discord.Game(name="BmW"))
+    last_message = None
     messages = deepcopy(messages_list)
     cleanmessages = deepcopy(messages_list)
+    channel = client.get_channel("417648831694635008")
+    
     while not client.is_closed:
-        channel = client.get_channel("417648831694635008")
         if not messages:
             messages = deepcopy(cleanmessages)
-        await client.send_message(channel, messages.pop(random.randrange(0, len(messages))))
+        if last_message and any(await client.logs_from(channel, after=last_message)):
+            content = messages.pop(random.randrange(0, len(messages)))
         await asyncio.sleep(21600)
 
 client.loop.create_task(background_loop())
