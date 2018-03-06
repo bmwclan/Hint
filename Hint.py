@@ -15,14 +15,14 @@ async def background_loop():
     last_message = None
     messages = deepcopy(messages_list)
     cleanmessages = deepcopy(messages_list)
-    channel = client.get_channel("417648831694635008")
-    
     while not client.is_closed:
+        channel = client.get_channel("417648831694635008")
         if not messages:
             messages = deepcopy(cleanmessages)
-        if last_message and any(await client.logs_from(channel, after=last_message)):
+        if len([x async for x in client.logs_from(channel, limit=2, after=last_message)]) > 1:
             content = messages.pop(random.randrange(0, len(messages)))
-        await asyncio.sleep(21600)
+            last_message = await client.send_message(channel, content)
+            await asyncio.sleep(30)
 
 client.loop.create_task(background_loop())
 client.run(key)
