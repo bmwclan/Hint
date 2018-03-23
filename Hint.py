@@ -16,7 +16,7 @@ async def background_loop():
     messages = deepcopy(messages_list)
     cleanmessages = deepcopy(messages_list)
     while not client.is_closed:
-        channel = client.get_channel("426536644573790208")
+        channel = client.get_channel("424290679686955009")
         if not messages:
             messages = deepcopy(cleanmessages)
         if len([x async for x in client.logs_from(channel, limit=2, after=last_message)]) > 1:
