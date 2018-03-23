@@ -1,4 +1,11 @@
-messages_list = ["Do not forget to join in on the fun, jump in channel and get starting", 
-"Do not forget to respect the people **#No_disrespecting**", 
-"Do not forget to like us on Facebook https://www.facebook.com/BmWPubG/",
-"Welcome to the biggest growing gaming family in the world"]
+messages_list = ["Keep in mind to never do anything stupid, or you'll get S H A M E", 
+"If you need help, ask Owner or Admin", 
+"Remember Lightning's rules",
+"Lightning's rule 2. Do not feed her, that is someone else's job"
+"Lightning's rule 3. Do not scare her",
+"Lightning's rule 4. Do not make Lightning mad, the probability of her attacking you is very high... and there is no stopping her",
+"Do not spam chats",
+"Play Pokemon by using p!start",
+"Duel with people using p!duel @player",
+"Invite friends, but remember, boys only",
+"Do not harass people, or else..."]
