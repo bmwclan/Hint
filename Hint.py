@@ -5,7 +5,7 @@ import random
 from messages import messages_list
 from copy import deepcopy
 
-#key = os.environ['BOT_TOKEN']
+key = os.environ['BOT_TOKEN']
 
 client = discord.Client()
 
