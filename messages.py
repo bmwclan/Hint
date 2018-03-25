@@ -3,7 +3,6 @@ messages_list = ["Now in bookstores: 'The Audacity of filling a man's anus with 
 "Wake up, America. Christmas is under attack by secular liberals and their congress flaccid penises whitering away beneath their suit pants.",
 "Lifetime presents 'wiping her butt, the story of inserting a Mason jar into my anus.'", 
 "TSA guidelines now prohibit having anuses for eyes on airplanes.",
-"Lightning's rule 4. Do not make Lightning mad, the probability of her attacking you is very high... and there is no stopping her",
 "Every step towards Auschwitz gets me a little bit closer to a face full of horse cum.",
 "Believe it or not, Jim Carrey can do a dead-on impression of coat hanger abortions.",
 "In the beginning, there was mild autism. And the Lord said 'Let there be the shittier, Jewish version of Christmas.",
